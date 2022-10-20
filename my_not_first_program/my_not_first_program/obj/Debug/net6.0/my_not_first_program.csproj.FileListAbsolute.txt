@@ -1,0 +1,15 @@
+D:\VS\inside\my_homeworks\my_not_first_program\my_not_first_program\obj\Debug\net6.0\my_not_first_program.csproj.AssemblyReference.cache
+D:\VS\inside\my_homeworks\my_not_first_program\my_not_first_program\obj\Debug\net6.0\my_not_first_program.GeneratedMSBuildEditorConfig.editorconfig
+D:\VS\inside\my_homeworks\my_not_first_program\my_not_first_program\obj\Debug\net6.0\my_not_first_program.AssemblyInfoInputs.cache
+D:\VS\inside\my_homeworks\my_not_first_program\my_not_first_program\obj\Debug\net6.0\my_not_first_program.AssemblyInfo.cs
+D:\VS\inside\my_homeworks\my_not_first_program\my_not_first_program\obj\Debug\net6.0\my_not_first_program.csproj.CoreCompileInputs.cache
+D:\VS\inside\my_homeworks\my_not_first_program\my_not_first_program\bin\Debug\net6.0\my_not_first_program.exe
+D:\VS\inside\my_homeworks\my_not_first_program\my_not_first_program\bin\Debug\net6.0\my_not_first_program.deps.json
+D:\VS\inside\my_homeworks\my_not_first_program\my_not_first_program\bin\Debug\net6.0\my_not_first_program.runtimeconfig.json
+D:\VS\inside\my_homeworks\my_not_first_program\my_not_first_program\bin\Debug\net6.0\my_not_first_program.dll
+D:\VS\inside\my_homeworks\my_not_first_program\my_not_first_program\bin\Debug\net6.0\my_not_first_program.pdb
+D:\VS\inside\my_homeworks\my_not_first_program\my_not_first_program\obj\Debug\net6.0\my_not_first_program.dll
+D:\VS\inside\my_homeworks\my_not_first_program\my_not_first_program\obj\Debug\net6.0\refint\my_not_first_program.dll
+D:\VS\inside\my_homeworks\my_not_first_program\my_not_first_program\obj\Debug\net6.0\my_not_first_program.pdb
+D:\VS\inside\my_homeworks\my_not_first_program\my_not_first_program\obj\Debug\net6.0\my_not_first_program.genruntimeconfig.cache
+D:\VS\inside\my_homeworks\my_not_first_program\my_not_first_program\obj\Debug\net6.0\ref\my_not_first_program.dll
