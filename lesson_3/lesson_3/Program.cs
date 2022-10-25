@@ -9,25 +9,32 @@
             //я так зрозумів, що треба просто об'явити змінні та проробити з ними мат приклади...
             //хоча з типом string або char таке не прокатить)
 
-            int a = 2;
+            /*int a = 2;
             double b = 1.47;
             bool c = true;
-            string d = "Five";
+            string d = "Five";*/
+
+            Console.Write("Input X = ");
+            double x = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Input Y = ");
+            double y = Convert.ToDouble(Console.ReadLine());
+
+
             //-6 * x ^ 3 + 5 * x ^ 2 - 10 * x + 15
-            double res1 = -6 * Math.Pow(a, 3) + 5 * Math.Pow(a, 2) - 10 * a + 15;
-            Console.WriteLine("-6 * x ^ 3 + 5 * x ^ 2 - 10 * x + 15 = " + res1 + $", where x = {a}");
+            double res1 = -6 * Math.Pow(x, 3) + 5 * Math.Pow(x, 2) - 10 * x + 15;
+            Console.WriteLine("-6 * x ^ 3 + 5 * x ^ 2 - 10 * x + 15 = " + res1 + $", where x = {x}");
 
             //abs(x) * sin(x)
-            double res2 = Math.Abs(b) * Math.Sin(b);
-            Console.WriteLine("abs(x) * sin(x) = " + res2 + $", where x = {b}");
+            double res2 = Math.Abs(x) * Math.Sin(x);
+            Console.WriteLine("abs(x) * sin(x) = " + res2 + $", where x = {x}");
 
             //2 * pi * x
-            double res3 = 2 * Math.PI * b;
-            Console.WriteLine("2 * pi * x = " + res3 + $", where x = {b}");
+            double res3 = 2 * Math.PI * x;
+            Console.WriteLine("2 * pi * x = " + res3 + $", where x = {x}");
 
             //max(x, y)
-            double maxof = Math.Max(a, b);
-            Console.WriteLine("max(x, y) = " + maxof + $", where x = {a}, y = {b}");
+            double maxof = Math.Max(x, y);
+            Console.WriteLine("max(x, y) = " + maxof + $", where x = {x}, y = {y}");
 
             //доп завдання з датами
             DateTime date = DateTime.Today;
