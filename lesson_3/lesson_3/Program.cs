@@ -15,34 +15,42 @@
             string d = "Five";*/
 
             Console.Write("Input X = ");
-            double x = Convert.ToDouble(Console.ReadLine());
+            string readX = Console.ReadLine();
             Console.Write("Input Y = ");
-            double y = Convert.ToDouble(Console.ReadLine());
+            string readY = Console.ReadLine();
+            double x;
+            double y;
+            if (double.TryParse(readX, out x) && double.TryParse(readY, out y))
+            {
 
+                //-6 * x ^ 3 + 5 * x ^ 2 - 10 * x + 15
+                double res1 = -6 * Math.Pow(x, 3) + 5 * Math.Pow(x, 2) - 10 * x + 15;
+                Console.WriteLine("-6 * x ^ 3 + 5 * x ^ 2 - 10 * x + 15 = " + res1 + $", where x = {x}");
 
-            //-6 * x ^ 3 + 5 * x ^ 2 - 10 * x + 15
-            double res1 = -6 * Math.Pow(x, 3) + 5 * Math.Pow(x, 2) - 10 * x + 15;
-            Console.WriteLine("-6 * x ^ 3 + 5 * x ^ 2 - 10 * x + 15 = " + res1 + $", where x = {x}");
+                //abs(x) * sin(x)
+                double res2 = Math.Abs(x) * Math.Sin(x);
+                Console.WriteLine("abs(x) * sin(x) = " + res2 + $", where x = {x}");
 
-            //abs(x) * sin(x)
-            double res2 = Math.Abs(x) * Math.Sin(x);
-            Console.WriteLine("abs(x) * sin(x) = " + res2 + $", where x = {x}");
+                //2 * pi * x
+                double res3 = 2 * Math.PI * x;
+                Console.WriteLine("2 * pi * x = " + res3 + $", where x = {x}");
 
-            //2 * pi * x
-            double res3 = 2 * Math.PI * x;
-            Console.WriteLine("2 * pi * x = " + res3 + $", where x = {x}");
+                //max(x, y)
+                double maxof = Math.Max(x, y);
+                Console.WriteLine("max(x, y) = " + maxof + $", where x = {x}, y = {y}");
 
-            //max(x, y)
-            double maxof = Math.Max(x, y);
-            Console.WriteLine("max(x, y) = " + maxof + $", where x = {x}, y = {y}");
-
-            //доп завдання з датами
-            DateTime date = DateTime.Today;
-            int today = date.DayOfYear;
-            int new_year = 365;
-            Console.WriteLine("\nToday is " + date.ToString("d"));
-            Console.WriteLine($"{new_year - today} days to New Year");
-            Console.WriteLine($"{today} days passed from New Year");
+                //доп завдання з датами
+                DateTime date = DateTime.Today;
+                int today = date.DayOfYear;
+                int new_year = 365;
+                Console.WriteLine("\nToday is " + date.ToString("d"));
+                Console.WriteLine($"{new_year - today} days to New Year");
+                Console.WriteLine($"{today} days passed from New Year");
+            }
+            else
+            {
+                Console.WriteLine("Invalid input!");
+            }
             Console.ReadKey(); //якщо закривається саме
         }
     }

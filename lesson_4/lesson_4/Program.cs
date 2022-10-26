@@ -8,45 +8,51 @@
              and will count the sum of all numbers between these constants. 
              If they are equal then sum should be one of them*/
             //whith recursion would be better)
-            //Я не знаю як вивести "Неправильне значення" оскільки при вводі букв видає помилку
-            //... точніше знаю... через try{} але ми ще це не вивчали) чи то у с++...
             Console.Write("X = ");
-            int x = Convert.ToInt32(Console.ReadLine());
+            string readX = Console.ReadLine();
             Console.Write("Y = ");
-            int y = Convert.ToInt32(Console.ReadLine());
-            int sum = 0;
-            Console.Write("Sum = ");
-            if (x != y)
+            string readY = Console.ReadLine();
+            int x;
+            int y;
+            if (int.TryParse(readX, out x) && int.TryParse(readY, out y))
             {
-                if (x > y)
+                int sum = 0;
+                Console.Write("Sum = ");
+
+                if (x != y)
                 {
-                    for (int i = y; i <= x; i++)
+                    if (x > y)
                     {
-                        sum += i;
-                        if (i == x)
+                        for (int i = y; i <= x; i++)
                         {
-                            Console.WriteLine(i + " = " + sum);
-                        } else Console.Write(i + " + ");
+                            sum += i;
+                            if (i == x)
+                            {
+                                Console.WriteLine(i + " = " + sum);
+                            }
+                            else Console.Write(i + " + ");
+                        }
+                    }
+                    else
+                    {
+                        for (int i = x; i <= y; i++)
+                        {
+                            sum += i;
+                            if (i == y)
+                            {
+                                Console.WriteLine(i + " = " + sum);
+                            }
+                            else Console.Write(i + " + ");
+                        }
                     }
                 }
                 else
                 {
-                    for (int i = x; i <= y; i++)
-                    {
-                        sum += i;
-                        if (i == y)
-                        {
-                            Console.WriteLine(i + " = " + sum);
-                        }
-                        else Console.Write(i + " + ");
-                    }
+                    sum = x;
+                    Console.WriteLine("x and y equal! = " + sum);
                 }
             }
-            else
-            {
-                sum = x;
-                Console.WriteLine("x and y equal! = " + sum);
-            }
+            else Console.WriteLine("Invalid input!");
             Console.ReadKey();//якщо закривається
         }
     }
