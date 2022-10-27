@@ -29,11 +29,11 @@
 
                 //abs(x) * sin(x)
                 double res2 = Math.Abs(x) * Math.Sin(x);
-                Console.WriteLine("abs(x) * sin(x) = " + res2 + $", where x = {x}");
+                Console.WriteLine("abs(x) * sin(x) = " + res2.ToString("F4") + $", where x = {x}");
 
                 //2 * pi * x
                 double res3 = 2 * Math.PI * x;
-                Console.WriteLine("2 * pi * x = " + res3 + $", where x = {x}");
+                Console.WriteLine("2 * pi * x = " + res3.ToString("F4") + $", where x = {x}");
 
                 //max(x, y)
                 double maxof = Math.Max(x, y);
