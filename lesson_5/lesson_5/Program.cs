@@ -19,7 +19,7 @@
             Method Repeat that will accept string X and number N and return X repeated N
             times(e.g.Repeat(‘str’, 3) returns ‘strstrstr’ = ‘str’ three times)
             */
-            Console.WriteLine("input variables... \nFor method TrySumIfOdd() input value tipe!");
+            Console.WriteLine("Input variables... \nFor method TrySumIfOdd() input value tipe!");
             Console.Write("Input X = ");
             string readX = Console.ReadLine();
             Console.Write("Input Y = ");
@@ -31,7 +31,7 @@
                 if(TrySumIfOdd(valX, valY, out int sum))
                 {
                     Console.WriteLine("Sum of variables are odd!");
-                }else Console.WriteLine("Sum = " + sum);
+                } else Console.WriteLine("Sum = " + sum);
             }
             else if (double.TryParse(readX, out double dubX) && double.TryParse(readY, out double dubY))
             {
@@ -101,14 +101,29 @@
         //TrySumIfOdd() method
         static bool TrySumIfOdd (int x, int y, out int sum)
         {
+            int tryMax = x;
             sum = 0;
-            if ((x + y) % 2 == 1)
+            if (x != y)
             {
+                if (Max(x, y) == x)
+                {
+                    tryMax = y;
+                    y = x;
+                    x = tryMax;
+                }
+                for (int i = x; i <= y; i++)
+                {
+                    sum += i;
+                }
+            } else sum = x + x;
+
+            if (sum % 2 == 1)
+            {
+                sum = 0;
                 return true;
             }
             else
             {
-                sum = x + y;
                 return false;
             }
         }
