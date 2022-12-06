@@ -42,6 +42,8 @@
                 }
                 else Console.WriteLine("Введіть значення більше 1\n");
             } while (true);
+
+            Console.ReadKey();
         }
 
 
